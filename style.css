@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-image: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.text .two,
+.image .people img.john {
+    display: none;
+}
+
+.text .one,
+.image .people img.tanya {
+    display: block;
+}
+
+
+.card {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10rem; */
+    /* margin-bottom: 3rem; */
+}
+
+.text {
+    margin-left: calc(14% - 4rem);
+    width: 50%;
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top -10% left 20%;
+    padding: 3rem 0;
+    z-index: 1;
+}
+
+.slide div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text .slide p.quote {
+    color: var(--DarkBlue);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.text .slide div p.name {
+    color: var(--DarkBlue);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text .slide div span.job {
+    margin-left: 10px;
+    color: var(--GrayishBlue);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text .slide div span.job:hover {
+    color: rgb(3, 104, 104);
+}
+
+.image {
+    margin-left: -14%;
+    position: relative;
+    padding: 4rem 0;
+    width: 50%;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    z-index: 0;
+}
+
+.image .people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img.tanya,
+.image img.john {
+    width: 75%;
+    box-shadow: 0px 5px 40px -10px var(--DarkBlue);
+}
+
+.image .controls {
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    display: flex;
+    z-index: 999;
+}
+
+.controls img {
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.controls img:hover {
+    background-color: antiquewhite;
+}
+
+.controls img.prev {
+    cursor: pointer;
+
+    border: transparent;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.controls img.next {
+    cursor: pointer;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.john {
+    display: none;
+}
+
+@media only screen and (max-width:1050px) {
+    .image .controls {
+        bottom: 11%;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .text .slide p.quote {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .text .slide p.quote {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width:898px) {
+    .text .slide div span.job {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    .text .slide div p.name {
+        font-size: 22px;
+    }
+
+    .text .slide div span.job {
+        font-size: 16px;
+    }
+
+    .image .controls {
+        bottom: 12%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .image {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 4rem;
+        width: 100%;
+        padding: 5rem 0;
+    }
+
+    .text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 100%;
+        padding: 3rem 2rem;
+        background-position: top -15% left 50%;
+        text-align: center;
+    }
+
+    .text .slide p.quote {
+        font-size: 27px;
+        margin-bottom: 1rem;
+    }
+
+    .text .slide div p.name {
+        font-size: 24px;
+    }
+
+    .text .slide div span.job {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .image .controls {
+        position: absolute;
+        bottom: 8%;
+        left: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .slide div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .image .controls {
+        bottom: 10%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .text .slide p.quote {
+        font-size: 22px;
+    }
+
+    .text .slide div p.name {
+        font-size: 18px;
+    }
+
+    .text .slide div span.job {
+        font-size: 16px;
+    }
+}
