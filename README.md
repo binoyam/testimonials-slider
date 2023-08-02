@@ -6,4 +6,4 @@
 * HTML 
 * CSS (layout)
 * Javascript (slider function)
-  [preview](https://64c84f59aaea26188c897419--papaya-pika-c95054.netlify.app)
+  [preview](https://64caadd6794e38129edbeb4e--spectacular-gaufre-9bb340.netlify.app)
